@@ -1,6 +1,6 @@
 ## Informe Práctica 2: Instalación y configuración de Visual Studio Code
 
-##Asignatura:
+## Asignatura:
 Desarrollo de Sistemas Informáticos
 ## Hecho por:
 Luciano Sekulic Gregoris
