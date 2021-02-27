@@ -75,6 +75,7 @@ Vamos a proceder a instalar las siguientes extensiones en la máquina virtual de
 Abriremos una terminal en el VSCode y seguiremos los siguientes pasos.
 
 Para instalar el compilador de TypeScript, deberemos usar el comando ***npm install --global typescript***, como se indica en la imagen siguiente.
+
 ![Image1](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/blob/main/1.PNG)
 
 Después, usaremos los siguientes comandos:
@@ -85,6 +86,7 @@ Después, usaremos los siguientes comandos:
 * ls -lrtha: para listar un determinado archivo en el directorio.
 
 Se puede apreciar en la siguiente imagen la utilización de los mismos.
+
 ![Image2](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/blob/main/2.PNG)
 
 Una vez hecho esto, vamos a la esquina superior derecha de la pantalla, hacemos click en ***File*** y en el desplegable, elegiremos ***Open Folder***. Seleccionamos ***hello-word*** y se nos abrirá otra ventana donde podremos ver ese directorio. Luego, vamos a añadir el directorio ***hello-word*** a un ***workspace***. Para ello, en el mismo menú ***file*** que ultilizamos antes, buscamos la opción ***Add folder to workspace...***,seleccionamos hello-word y lo guardamos haciendo click en ***Save workspace as...***
@@ -104,10 +106,12 @@ Procedemos a crear un fichero en el directorio actual (hello-word) mediante el c
 ´´´
 
 Donde en orden indicamos al compilador que queremos generar código compatible con los estándares de JavaScript, el código producido se almacenará en el directorio ***./dist***, que el código fuente TypeScript se encuentra en el directorio ***./src*** e indicamos un stándar para cargar códigos desde ficheros independientes. Como podemos ver en la siguiente imagen.
+
 ![Image3](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/blob/main/3.PNG)
 
 
 Crearemos otro fichero en el mismo directorio ***hello-word*** de la siguiente manera:
+
 ![Image4](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/blob/main/4.PNG)
 
 Donde podemos apreciar como en el directorio actual, creamos un directorio llamado ***src*** y dentro de dicho directorio creamos un fichero llamado ***index.ts***, en el cual escribiremos el siguiente código de TypeScript.
@@ -118,12 +122,15 @@ console.log(myString);
 ´´´
 
 Una vez guardado el contenido del fichero, vamos a proceder a compilarlo mediante el comando ***tsc***, que va a crear un directorio llamado ***dist***, como se puede apreciar en la siguiente imagen.
+
 ![Image5](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/blob/main/5.PNG)
 
 Si miramos el contenido del fichero ***/.src/index.ts*** y lo comparamos con ***./dist/index.js*** podremos apreciar ciertas diferencias en las declaraciones de la variable ***mystring***. Esto ocurre debido a que TypeScript usa ciertas funcionalidades para corregir problemas que surgen con JavaScript.
+
 ![Image6](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/blob/main/6.PNG)
 
 En último lugar, procederemos a ejecutar el programa mediante el comando ***node dist/index.js***, donde nos tiene que imprimir por pantalla ***"Hola Mundo"***
+
 ![Image7](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/blob/main/7.PNG)
 
 ## Conclusiones
