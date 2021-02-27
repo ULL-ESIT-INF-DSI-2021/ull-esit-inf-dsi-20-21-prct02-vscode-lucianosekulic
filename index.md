@@ -1,43 +1,3 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-
------------------------------------------------------------------------------
-
 # Informe Práctica 2: Instalación y configuración de Visual Studio Code
 
 # Introducción
@@ -84,17 +44,48 @@ Para llevar a cabo este apartado es necesario tener completada la ***"Práctica 
 Luego, es necesario descargar la extensión para poder conectar por SSH desde tu VSCode a tu máquina remota. Para ello, tenemos que hacer click en la parte izquierda en ***"Extensiones"*** o con el comando ***"Ctrl+Shift+X"***, una vez hecho esto, en el buscador escribimos ***"Remote- SSH"*** e instalamos el paquete. En el siguiente enlace podrás consultar con más detenimiento como funcionan las extensiones en VSCode.
 [Extensiones VSCode](https://code.visualstudio.com/docs/editor/extension-gallery)
 
-Pulsando ***F1*** ó ***Ctrl + Shift + P***, abriremos un desplegable que muestra una
+Como nos indica el profesor, Pulsando ***F1*** ó ***Ctrl + Shift + P***, abriremos un desplegable que muestra una serie de comandos. Vamos a escribir ***"Remote SSH - Connect to host"*** y haremos click en el nombre de nuestra respectiva máquina virtual, luego se abrirá otra ventana donde se iniciará la conexión SSH con nuestra máquina remota.
 
-
-
-
-
+Sin embargo hay otra manera de conectarse, en la siguiente imagen podemos ver que en la esquina inferior izquierda hay dos simbolos ***"<>"*** con unn fondo verde. Al hacer click nos abrirá el desplegable dicho anteriormente pero solamente con los comandos relacionados con la extension de SSH descargada previamente. 
 ![Image](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/blob/main/Captura.PNG)
 
+Para comprobar que estamos conectados a la máquina virtual, abrimos una terminal mediante el comando ***"Ctrl + Shift + ñ"***, en el caso de Windows, y escribiremos el siguiente comando para ver el nombre del host de la máquina virtual a la que está conectada.
 
+´´´bash
+[~()]$hostname
+´´´
 
+## Visual Studio Live Share
 
+Visual Studio Live Share es una herramienta que nos permite trabajar de manera colaborativa en tiempo real con otros usuarios en la máquina actual en la que estés conectado, sea la remota o la local. Se puede descargar igual que la extension de SSH pero escribiendo en el buscador ***Visual Studio Live Share*** o mediante el siguiente enlace.
+[Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
+
+Esta herramienta es interesante para poder trabajar en grupo ya sea en una práctica o en un entorno laboral para que a las personas relacionadas le sea más fácil compartir instantaneamente el proyecto actual, hacer llamadas de voz, enviar aplicaciones web de localhost, etc.
+
+En el siguiente enlace tendrá información más detallada al respecto
+[Información Live Share](https://docs.microsoft.com/en-us/visualstudio/liveshare/)
+
+## Proyecto "Hola Mundo" en Typescript
+
+Vamos a proceder a instalar las siguientes extensiones en la máquina virtual del Iaas para realizar este proyecto:
+
+* ***Vim***, es una extensión recomendada por el profesor si estás familiarizado con el editor Vim (***OPCIONAL***).
+* ***ESLint***, es una extensión que nos permite hacer comprobaciones de estilo sobre ficheros del tipo JavaScript y TypeScript (***OBLIGATORIO***)
+
+Abriremos una terminal en el VSCode y seguiremos los siguientes pasos.
+
+Para instalar el compilador de TypeScript, deberemos usar el comando ***npm install --global typescript***, como se indica en la imagen siguiente.
+![Image1](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/blob/main/1.PNG)
+
+Después, usaremos los siguientes comandos:
+* pwd: para saber el directorio actual en el que nos encontramos.
+* mkdir: para crear un nuevo directorio.
+* cd: para movernos de un directorio a otro.
+* npm init --yes: Es un comando que nos va a permitir crear un fichero llamado ***package.json***, ***"el cual se utiliza, entre otras cosas, para establecer las dependencias de desarrollo y ejecución del proyecto a modo de paquetes de los que depende el proyecto actual"***, como lo explicó el profesor Eduardo Segredo en el guión de la práctica 2.
+* ls -lrtha: para listar un determinado archivo en el directorio.
+
+Se puede apreciar en la siguiente imagen la utilización de los mismos.
+![Image2](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-lucianosekulic/blob/main/2.PNG)
 
 
 
